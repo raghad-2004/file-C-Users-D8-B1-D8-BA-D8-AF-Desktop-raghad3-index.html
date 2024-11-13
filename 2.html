@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Store</title>
+  <link rel="stylesheet" href="3.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="2.html">View Products</a> | 
+      <a href="cart.html">View Cart</a>
+    </nav>
+    <div class="cart">
+      <span>Cart: <span id="cart-count">0</span> items</span>
+    </div>
+  </header>
+
+  <!-- Product Listing Page -->
+  <main>
+    <h1>Our Plants</h1>
+
+    <section class="category">
+      <h2>Succulents</h2>
+      <div class="products">
+        <div class="product">
+          <img src="plant1.jpg" alt="Succulent 1">
+          <p>Succulent 1</p>
+          <p>$10.00</p>
+          <button onclick="addToCart('Succulent 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="plant2.jpg" alt="Succulent 2">
+          <p>Succulent 2</p>
+          <p>$15.00</p>
+          <button onclick="addToCart('Succulent 2', 15)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>Ferns</h2>
+      <div class="products">
+        <div class="product">
+          <img src="plant3.jpg" alt="Fern 1">
+          <p>Fern 1</p>
+          <p>$20.00</p>
+          <button onclick="addToCart('Fern 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="plant4.jpg" alt="Fern 2">
+          <p>Fern 2</p>
+          <p>$25.00</p>
+          <button onclick="addToCart('Fern 2', 25)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>Flowering Plants</h2>
+      <div class="products">
+        <div class="product">
+          <img src="plant5.jpg" alt="Flower 1">
+          <p>Flower 1</p>
+          <p>$30.00</p>
+          <button onclick="addToCart('Flower 1', 30)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="plant6.jpg" alt="Flower 2">
+          <p>Flower 2</p>
+          <p>$35.00</p>
+          <button onclick="addToCart('Flower 2', 35)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="4.js"></script>
+</body>
+</html>

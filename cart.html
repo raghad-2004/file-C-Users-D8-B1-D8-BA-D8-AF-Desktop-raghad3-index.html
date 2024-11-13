@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عربة التسوق</title>
+  <style>
+    .cart-item { display: flex; margin-bottom: 10px; }
+    .cart-item img { margin-right: 10px; }
+    .cart-item-info { margin-right: 20px; }
+    .cart-item-actions button { margin-left: 5px; }
+    #checkout-button { margin-top: 20px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    #checkout-button:disabled { background-color: #ccc; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <h1>Shopping cart</h1>
+  
+  <!-- Cart Summary -->
+  <div>
+    <p>product price <span id="total-items">0</span></p>
+    <p> total price<span id="total-cost">0.00</span></p>
+  </div>
+  
+  <!-- Cart Items -->
+  <div id="cart-items"></div>
+
+  <!-- Checkout Button -->
+  <button id="checkout-button" onclick="checkout()">click</button>
+  <script src="4.js"></script>
+</body>
+</html>
